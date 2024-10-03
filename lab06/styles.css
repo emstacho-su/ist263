@@ -1,7 +1,7 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 h1, h2 {color:cornflowerblue}
 .special {color:rgb(106, 81, 81)}
-.evenrow {color:#5d5858}
+.evenrow {background-color:#5d5858}
 h1 {font-size: 18;}
 h2 {font-size: 16;}
 
