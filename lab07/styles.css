@@ -1,7 +1,10 @@
 body {font-family: Arial, Helvetica, sans-serif;}
-h1, h2 {color:darkred}
-.special {color:rgb(106, 81, 81)}
-.evenrow {background-color: darkgrey}
-h1 {font-size: 18;}
-h2 {font-size: 16;}
-
+body {background-color: #FCF7F8;}
+text {color: black;}
+h1, h2 {color: #203731}
+a {color: #352FE0;}
+nav {background-color: #EEE1C6;}
+nav a {color: #0077C0;}
+nav a:hover {background-color: #FFB612;}
+nav {padding: 10px;}
+nav {margin-bottom: 30px;}
