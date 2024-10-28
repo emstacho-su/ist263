@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Milwaukee Bucks Info</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            header {
+                background: #007b33;
+                color: white;
+                text-align: center;
+                padding: 1rem 0;
+            }
+            .banner {
+                width: 100%;
+                height: auto;
+            }
+            .container {
+                width: 80%;
+                margin: auto;
+                padding: 1rem;
+            }
+            .section {
+                background: white;
+                margin: 2rem 0;
+                padding: 1rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            h2 {
+                color: #007b33;
+            }
+        </style>
+    </head>
+    <body>
+
+    <header>
+        <h1>Milwaukee Bucks Info</h1>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <img src="placeholder_fiserv_forum.jpg" alt="Fiserv Forum" class="banner">
+            
+            <div class="section">
+                <h2>History of the Milwaukee Bucks</h2>
+                <p>Founded in 1968, the Milwaukee Bucks quickly made a name for themselves...</p>
+            </div>
+
+            <div class="section">
+                <h2>Notable Achievements</h2>
+                <p>The Bucks have won two NBA championships...</p>
+            </div>
+
+            <div class="section">
+                <h2>Star Players</h2>
+                <ul>
+                    <li>Kareem Abdul-Jabbar: <a href="placeholder_kareem_stats.html">Statistics</a> <img src="placeholder_kareem.jpg" alt="Kareem Abdul-Jabbar" width="100"></li>
+                    <li>Ray Allen: <a href="placeholder_ray_stats.html">Statistics</a> <img src="placeholder_ray.jpg" alt="Ray Allen" width="100"></li>
+                    <li>Giannis Antetokounmpo: <a href="placeholder_giannis_stats.html">Statistics</a> <img src="placeholder_giannis.jpg" alt="Giannis Antetokounmpo" width="100"></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Fan Culture</h2>
+                <p>Bucks fans are known for their enthusiasm and dedication...</p>
+            </div>
+
+            <div class="section">
+                <p>Thank you for visiting the Milwaukee Bucks page! Explore more about the team’s current season, key matchups, and standout performances.</p>
+            </div>
+        </section>
+
+    </div>
+
+    </body>
+</html>
