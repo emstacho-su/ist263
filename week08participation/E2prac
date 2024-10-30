@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Example</title>
+    <style>
+        .flexbox {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px; /* Added padding for better spacing */
+        }
+        .left-container {
+            width: 75%;
+        }
+        .right-container {
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="left-container">
+            <p>Hello</p>
+        </div>
+        <div class="right-container">
+            <p>World</p>
+        </div>
+    </div>
+</body>
+</html>
