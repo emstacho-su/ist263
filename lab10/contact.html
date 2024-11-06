@@ -13,13 +13,20 @@
                     border-radius: 1em;
                     margin: 30px;
                     padding: 20px;
-                    gap: 25px;}
+                    gap: 25px;
+                    flex-wrap: wrap;
+                    flex-basis: 100%;}
         .container2 {display: flex;
                     background-color: #F0F0F0;
                     border-radius: 1em;
                     margin: 30px;
                     padding: 20px;
-                    justify-content: space-around;}
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    flex-basis: 100%;
+                    
+                    
+        }
         h1 {font-size: 36px;}
         h1, p, h2 {color: black;}
         .contact {background-color: white
@@ -28,8 +35,10 @@
                 border-radius: 3em;
                 margin-left: 25%;
                 margin-right: 25%;}
-                #techskillstitle {text-align: center;}
-
+        #techskillstitle {text-align: center;}
+        .googlemap {width: 100%;
+                    height: auto;
+        }
     </style>
 </head>
 
@@ -63,6 +72,7 @@
 </div>
 
 <div class="container2">
+
     <div class="form_container1">
         
         <h2>Feedback?</h2>
@@ -84,9 +94,9 @@
             <input type="button" id="submit" name="submit" value="Submit"><br>
         </form>
     </div>
-    <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.9806853169375!2d-88.207990887934!3d42.83102180509692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88059f9f905e191d%3A0xb7cdb7e8385de651!2s8125%20Yarrow%20Ct%2C%20Waterford%2C%20WI%2053185!5e0!3m2!1sen!2sus!4v1726181748049!5m2!1sen!2sus" width="600" height="450" style="border: 2px solid #000;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
-    </div>
+
+    <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.9806853169375!2d-88.207990887934!3d42.83102180509692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88059f9f905e191d%3A0xb7cdb7e8385de651!2s8125%20Yarrow%20Ct%2C%20Waterford%2C%20WI%2053185!5e0!3m2!1sen!2sus!4v1726181748049!5m2!1sen!2sus"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
 </div>
 
 </body>
