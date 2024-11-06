@@ -21,13 +21,11 @@
                     border-radius: 1em;
                     margin: 30px;
                     padding: 20px;
-                    justify-content: space-around;
+                    justify-content: space-between;
                     flex-wrap: wrap;
                     
                     
         }
-        .form_container1 {max-width: 100%;
-                        flex-basis: 50%;}
         h1 {font-size: 36px;}
         h1, p, h2 {color: black;}
         .contact {background-color: white
@@ -37,11 +35,16 @@
                 margin-left: 25%;
                 margin-right: 25%;}
         #techskillstitle {text-align: center;}
-        .googlemap {max-width: 50%%;
+        .googlemap {max-width: 100%;
                     height: auto;
-                    flex: 1 1 auto;
+                flex: 1 1 auto;}
+        .form_container1 {max-width: 100%;            
+                        flex-basis: 50%;
+                        }
+        #feedback {max-width: 90%;}
+        @media screen and (max-width: 800px) {.form_container1 {text-align: center;}
 
-        }
+            }
     </style>
 </head>
 
@@ -50,7 +53,7 @@
         <h1 id="techskillstitle">Technical Skills</h1>
     </main>
     <nav>
-        <a href="index.html">Home</a>&#124;<a href="skills.html">Skills</a>&#124;<a href="contact.html">Contact</a>
+        <a href="index.html">Home</a><span>&#124;</span><a href="skills.html">Skills</a><span>&#124;</span><a href="contact.html">Contact</a>
     </nav>
 <div class="contact">
     <h1>Contact</h1>

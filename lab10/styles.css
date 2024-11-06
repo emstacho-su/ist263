@@ -5,10 +5,14 @@ body p, i {color: white;}
 text {color: black;}
 h1, h2 {color: white;}
 a {color: #352FE0;}
-nav {background-color: crimson;}
-nav a {color: white}
+nav {background-color: crimson;text-align:left;}
+nav a {color: white;}
 nav a:hover {background-color: yellow;}
 nav {padding: 10px;}
 nav {margin-bottom: 30px;}
 .index_banner_image {max-width: 100%;}
 .googlemap {max-width: 100%;}
+@media screen and (max-width: 1400px) {
+    nav a {width:100%; display: block; margin-bottom:.75em;}
+    nav span {display: none;}                                                   
+            }
