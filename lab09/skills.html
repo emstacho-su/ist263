@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Skills</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        table, th, td {border: 1px solid black;}
+        h1 {font-size: 22px;}
+        .skills_heading {display: flex; justify-content: center; }
+        #skill_desc {display: flex;
+                    justify-content: center;}
+        #docu_icon, #OPSEC_icon, #word_icon, #melt_icon, #python_icon {width: 100px;}
+        .icon_desc_box {display: flex;
+                        flex-wrap: wrap; 
+                        justify-content: space-around;
+                        flex-basis: 75%;
+                        text-align: center;;
+                        padding: 0px;
+        }
+        h2 {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         font-size: 18px;
+        }
+        .otherskill {background-color: crimson; 
+                    border-radius: .5em; 
+                    padding:10px
+                    
+        }
+        .otherskillfbox {flex-basis: 25%;}
+        .otherskill p {color:aliceblue;}
+        .otherskill h2 {color: aliceblue;}
+        .tech_skills_total {display: flex;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>&#124;<a href="skills.html">Skills</a>&#124;<a href="contact.html">Contact</a>
+    </nav>
+    <main class="skills_heading">
+        <h1>Technical Skills</h1>
+    </main>
+    
+    <p id="skill_desc">The following is a list of Technical Skills that I have developed through schooling and employement.</p>
+
+    <div class="tech_skills_total">
+
+        <div class="icon_desc_box">
+            <div id="block1">
+                <i class="fa-solid fa-book" id="docu_icon"></i><br>
+                <p>Documentation</p>
+            </div>
+            <div id="block2">
+                <i class="fa-solid fa-shield" id="OPSEC_icon"></i><br>
+                <p>OPSEC Procedure</p>
+            </div>
+            <div id="block3">
+                <i class="fa-solid fa-file-word" id="word_icon"></i><br>
+                <p>Microsoft Word</p>
+            </div>
+            <div id="block4">
+                <i class="fa-solid fa-meteor" id="melt_icon"></i><br>
+                <p>Melt Procedures</p>
+            </div>
+            <div id="block5">
+                <i class="fa-brands fa-python" id="python_icon"></i><br>
+                <p>Python</p>
+            </div>
+        </div>
+        
+        <div class="otherskillfbox">
+            <aside class="otherskill">
+                <h2>Other Skills</h2>
+                <p>HTML</p>
+                <p>In Person Data Collection (for Metallurgy)</p>
+                <p>Basic Understanding of Networks</p>
+                <p>Document Version Control</p>
+                <p>Understanding of OS Concepts</p>
+            </aside>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

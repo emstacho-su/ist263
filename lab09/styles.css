@@ -1,0 +1,12 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+body {background-color: grey}
+body p, i {color: white;}
+
+text {color: black;}
+h1, h2 {color: white;}
+a {color: #352FE0;}
+nav {background-color: crimson;}
+nav a {color: white}
+nav a:hover {background-color: yellow;}
+nav {padding: 10px;}
+nav {margin-bottom: 30px;}

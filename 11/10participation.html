@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Responsive Design</title>
+        <style>
+            @media screen and (max-width: 800px) {body {background-color: blue;}
+                                                #lh1 {display: none;}
+            }
+            @media screen and (min-width: 801px) {body {background-color: red;}
+                                                #sh1 {display: none;}
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="smallblue">
+            <h1 id="sh1">I'm Small</h1>
+        </div>
+        <div class="largered">
+            <h1 id="lh1">I'm Large</h1>
+        </div>
+    </body>
+
+</html>
