@@ -6,10 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wisconsin Sports</title>
     <style>
-        body {text-align: center;}
-        #navBar {text-align: left;}
-        #packers_info_text {margin-left: 15%; margin-right: 15%;}
-        #bucks_info_text {margin-left: 15%; margin-right: 15%;}
+        body {
+            text-align: center;
+        }
+
+        #navBar {
+            text-align: left;
+        }
+
+        #packers_info_text,
+        #bucks_info_text {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        .banner img {
+            width: 100%;
+        }
+
+        .info-section {
+            margin-bottom: 30px;
+        }
+
+        .info-section img {
+            width: 100px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: gray;
+        }
     </style>
 </head>
 
@@ -19,38 +56,35 @@
     </nav>
 
     <main>
-
         <div class="banner">
             <img src="../images/homePageBanner.png" alt="Milwaukee Skyline" width="100%">
         </div>
 
-      
         <div id="intro">
             <p>This website is dedicated to celebrating the rich sports culture of Wisconsin, focusing specifically on two of the most beloved teams from the state:</p>
             <strong>the Green Bay Packers and the Milwaukee Bucks.</strong><br>
             <p>Here, you will find information about these teams, their history, achievements, and impact on the community.</p><br>
         </div>
 
-        <div class="packers_info">
-            <img src="../images/packersLogo.png" alt="Green Bay Packers Logo" width="100px">
+        <div class="packers_info info-section">
+            <img src="../images/packersLogo.png" alt="Green Bay Packers Logo" width="100">
             <h2>Green Bay Packers</h2>
             <div id="packers_info_text">
                 <p>The Green Bay Packers, established in 1919, are one of the oldest and most successful teams in the NFL. Known for their passionate fan base and iconic Lambeau Field, the Packers have won numerous championships, including four Super Bowl titles.</p>
             </div>
         </div>
         <br>
-        
-        <div class="bucks_info">
-            <img src="../images/bucksLogo.png" alt="Milwuakee Bucks Logo" width="100px">
+
+        <div class="bucks_info info-section">
+            <img src="../images/bucksLogo.png" alt="Milwaukee Bucks Logo" width="100">
             <h2>Milwaukee Bucks</h2>
             <div id="bucks_info_text">
                 <p>The Milwaukee Bucks, founded in 1968, are a powerhouse in the NBA. With their recent success, including an NBA Championship in 2021, the Bucks have dedicated fans all across Wisconsin.</p>
+            </div>
         </div>
         <br>
-
     </main>
-    
-   
-   
+
 </body>
+
 </html>
