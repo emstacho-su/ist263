@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisconsin Sports</title>
+<style>
+    body {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #2C9E4F;
+    }
+
+    #navBar {
+        text-align: left;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    #navBar a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        flex: 1;
+    }
+
+    .banner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .info-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        width: 75%;
+        background-color: whitesmoke;
+        border-radius: 2em;
+        padding: 20px;
+        box-shadow: 0 0px 8px;
+    }
+
+    .info-section img {
+        margin-bottom: 10px;
+    }
+
+    #intro {
+        margin: 10px;
+        max-width: 800px;
+    }
+    
+    .packers_info_text, .bucks_info_text {
+        text-align: left;
+        margin-top: 10px;
+    }
+    .sports-info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 20px; 
+            padding: 20px;
+            margin: 20px;
+            max-width: 900px; 
+    }
+    .team-info {
+            background-color: #E3D8B4; 
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+    }
+    .team-info img {
+            margin-bottom: 10px;
+            width: 100px; 
+            height: auto;
+    }
+    hr {
+        border: 0;
+        height: 3px;
+        background-color: #333;
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    @media (max-width: 600px) {
+        main {
+            margin: 10px;
+        }
+    }
+</style>
+</head>
+<body>
+    <nav id="navBar">
+        <a href="projecthomepage.html">Home</a>&#124;<a href="packerspage.html">Green Bay Packers</a>&#124;<a href="buckspage.html">Milwaukee Bucks</a>
+    </nav>
+
+    <main>
+        <div class="banner">
+            <img src="../images/homePageBanner.png" alt="Milwaukee Skyline">
+        </div>
+        <div class="info-section">
+            <h1>Wisconsin Sports</h1>
+            <div id="intro">
+                <p>This website is dedicated to celebrating the rich sports culture of Wisconsin, focusing specifically on two of the most beloved teams from the state:</p>
+                <strong>the Green Bay Packers and the Milwaukee Bucks.</strong><br>
+                <p>Here, you will find information about these teams, their history, achievements, and impact on the community.</p><br>
+            </div>
+            <div class="sports-info-grid"></div>
+                <div class="team-info">
+                    <img src="../images/packersLogo.png" alt="Green Bay Packers Logo">
+                    <h2>Green Bay Packers</h2>
+                    <p>The Green Bay Packers, established in 1919, are one of the oldest and most successful teams in the NFL. Known for their passionate fan base and iconic Lambeau Field, the Packers have won numerous championships, including four Super Bowl titles.</p>
+                </div>
+                <br>
+                <div class="team-info">
+                    <img src="../images/bucksLogo.png" alt="Milwaukee Bucks Logo">
+                    <h2>Milwaukee Bucks</h2>
+                    <p>The Milwaukee Bucks, founded in 1968, are a powerhouse in the NBA. With their recent success, including an NBA Championship in 2021, the Bucks have dedicated fans all across Wisconsin.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </main>
+    
+
+</body>
+
+</html>

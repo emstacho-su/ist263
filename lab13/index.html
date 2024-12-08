@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evan M. Stachowiak - Bio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .footerfloat1 {float: right; margin: 0;}
+        .footerfloat2 {float: left; margin: 0;}
+        strong, ul {color: white;}
+        #imagetest {border-radius: 5em;}
+        .self_desc, .strengths_container {
+            text-align: center;
+        }
+        body {text-align: center; margin: 0; padding: 0;}
+        ul {
+            text-align: center;
+            margin: 0 auto;
+            padding: 0;
+            list-style-type: none;
+        }
+        .flexbox {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            padding: 20px;
+        }
+        .flexbox div {padding: 5px 0;}
+        header, footer {text-align: center;}
+        .skip-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 5px 10px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        .skip-link:focus {
+            top: 10px;
+        }
+        nav {justify-content: flex-start;}
+    </style>
+</head>
+
+<body>
+    
+    <nav>
+        <a href="index.html">Home</a><span>&#124;</span><a href="skills.html">Skills</a><span>&#124;</span><a href="contact.html">Contact</a>
+    </nav>
+    <header>
+        <img class="index_banner_image" id="imagetest" src="../images/banner4portfolio.png" alt="Portfolio banner featuring Evan M. Stachowiak" style="width: 100%; height: auto;">
+    </header>
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+    <main id="main-content">
+        <div class="self_desc">
+            <h1>Evan Stachowiak</h1>
+            <h2>Sophomore Undergraduate Student</h2>
+            <p>Undeclared, I hope to eventually transfer into the I-school.</p>
+        </div>
+        <section class="flexbox strengths_container">
+            <h2>Strengths</h2>
+            <ul>
+                <li>Outgoing</li>
+                <li>Open to New Things</li>
+                <li>Quick Learner</li>
+                <li>Dedicated</li>
+            </ul>
+        </section>
+        <section>
+            <p>I was previously a Music Major. I have spent <strong>five</strong> years working at the same bar, and I once spoke at an SFSA conference after winning a scholarship.</p>
+            <p>I enjoy going out, hanging with friends, watching horror movies, and playing video games. -- <a href="https://r6.tracker.network/r6siege/profile/ubi/camerino.-/overview">My gaming profile</a></p>
+            <p>A fun fact about me is that I grew up on a horse rescue.</p>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p class="footerfloat2">&copy; 2024</p>
+        <p class="footerfloat1">"So it goes" - Kurt Vonnegut</p>
+    </footer>
+</body>
+
+</html>

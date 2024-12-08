@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>11/19</title>
+        
+        <script>
+            //function colorChange () {
+                //if (document.getElementById('text').innerHTML == 'Syracuse University') {
+                   // document.getElementById("text").style.color = "#F76900";
+                   // document.getElementById("text").innerHTML = 'Orange Nation'}
+                //else if (document.getElementById('text').innerHTML == 'Orange Nation') {
+                   // document.getElementById("text").innerHTML = 'Syracuse University'
+                    //document.getElementById("text").style.color = "#000E54"}}
+                
+      function changeText() {
+        document.getElementById("response").innerHTML = a;
+
+      }
+
+      const cuseTempAPI =
+        "https://api.weather.gov/gridpoints/BGM/52,99/forecast";
+      function getSyracuseTemp() {
+        fetch(cuseTempAPI)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
+            return response.json();
+          })
+          .then((data) => {
+            console.log(data);
+            time = Date(data.properties.periods[0].startTime);
+            temp = data.properties.periods[0].temperature;
+            forecast = data.properties.periods[0].detailedForecast;
+            icon = data.properties.periods[0].icon;
+            console.log(icon)
+            document.getElementById("icon").setAttribute("src", icon);
+            document.getElementById("time").innerHTML = time;
+            document.getElementById("temp").innerHTML = temp + "°F";
+            document.getElementById("forecast").innerHTML = forecast;
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
+
+
+      function getCurrentDate() {
+        const time = new Date(); // Current date and time
+        const formattedDate = time.toLocaleDateString("en-US"); // MM/DD/YYYY format
+        document.getElementById("date").innerHTML = formattedDate;
+        console.log(formattedDate);
+
+      }
+
+    
+        </script>
+        <style>
+            .mobile-container{
+                width: 844px;
+                margin: auto;
+                background-color: #555;
+                height: 390px;
+                border-radius: 10px;
+            }
+            #icon {width: 90%;
+                    margin-left: 5%;
+                    margin-top: 3em;}
+            .flexbox {display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    text-align: center;}
+            #button1, #button2 {text-align: center;}
+            body {background-color: green;}
+            p, h2 {color: white;}
+            .lowerpage {}
+        </style>
+    </head>
+
+    <body>
+    
+    <h2 id="cuse-weather"></h2>
+    <div>
+        <img id="icon" src="https://api.weather.gov/icons/land/night/bkn?size=medium">
+    </div>
+    <div class="lowerpage">
+        <div class="flexbox">
+            <div>
+                <h2>Current Time:</h2>
+                <p id="time">Tue Nov 19 2024 19:28:31 GMT-0500 (Eastern Standard Time)</p>
+            </div>
+            <div>
+                <h2>Current Temperature:</h2>
+                <p id="temp">43°F</p>
+            </div>
+            <div>
+                <h2>Weather Forecast:</h2>
+                <p id="forecast">Mostly cloudy, with a low around 43. East wind around 2 mph.</p>
+            </div>
+        </div>
+        <div id="button1">
+            <button onclick="getCurrentDate()">Get Today's Date</button>
+            <br>
+        </div>
+        <div id="button2">
+            <button  onclick="getSyracuseTemp()">Get Syracuse Weather</button>
+        </div>
+    </div>
+    </body>
+
+</html>

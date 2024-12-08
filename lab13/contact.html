@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container1 {
+            display: flex;
+            background-color: #F0F0F0;
+            border-radius: 1em;
+            margin: 30px;
+            padding: 20px;
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        h1, h2, p {color: black;}
+        .contact {
+            background-color: white;
+            text-align: center;
+            border-radius: 3em;
+            margin: 20px auto;
+            padding: 10px;
+            width: 90%;
+        }
+        .form_container1 {flex: 1; padding: 10px;}
+        .googlemap {flex: 1; max-width: 100%; height: auto;}
+        .skip-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 5px 10px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        .skip-link:focus {
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+    <nav>
+        <a href="index.html">Home</a><span>&#124;</span><a href="skills.html">Skills</a><span>&#124;</span><a href="contact.html">Contact</a>
+    </nav>
+    <main id="main-content">
+        <div class="contact">
+            <h1>Contact</h1>
+        </div>
+        <section class="container1">
+            <div>
+                <h2>Address</h2>
+                <p>Evan Michael Stachowiak</p>
+                <p>8125 Yarrow Court</p>
+                <p>Waterford, WI, 53185</p>
+            </div>
+            <div>
+                <p><a href="mailto:emstacho@syr.edu">Email Evan Stachowiak</a></p>
+                <p><a href="https://www.linkedin.com"><img src="../images/logo-sized.png" alt="LinkedIn logo" width="35"> My LinkedIn Profile</a></p>
+            </div>
+        </section>
+        <section class="container2">
+            <form class="form_container1" action="https://formspree.io/f/mldrykdb" method="POST">
+                <h2>Feedback?</h2>
+                <label for="cname">Name:</label>
+                <input type="text" id="cname" name="cname"><br>
+                <input type="radio" id="Yes" name="choice" value="Yes"><label for="Yes">Yes</label><br>
+                <input type="radio" id="No" name="choice" value="No"><label for="No">No</label><br>
+                <input type="radio" id="Maybe" name="choice" value="Maybe"><label for="Maybe">Maybe</label><br><br>
+                <textarea id="feedback" name="comments" rows="4" cols="50" placeholder="Enter your feedback"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <iframe class="googlemap" src="https://www.google.com/maps/embed?pb..." 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map for 8125 Yarrow Court"></iframe>
+        </section>
+    </main>
+</body>
+
+</html>
