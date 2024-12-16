@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wisconsin Sports</title>
     <style>
-        /* Base Styles */
         body {
             text-align: center;
             margin: 0;
@@ -15,7 +14,6 @@
             background-color: #2C9E4F;
         }
 
-        /* Navigation Bar */
         nav#navBar {
             text-align: left;
             width: 100%;
@@ -29,13 +27,10 @@
             text-decoration: none;
         }
 
-        /* Active Navigation Link */
         nav#navBar a.active {
             font-weight: bold;
-            text-decoration: underline;
         }
 
-        /* Skip to Content Link */
         .skip-link {
             position: absolute;
             top: -40px;
@@ -43,8 +38,6 @@
             background-color: #000;
             color: #fff;
             padding: 8px 16px;
-            z-index: 100;
-            text-decoration: none;
             transition: top 0.3s ease-in-out;
         }
 
@@ -52,7 +45,6 @@
             top: 0;
         }
 
-        /* Main Content Area */
         main#content {
             display: flex;
             flex-direction: column;
@@ -63,13 +55,11 @@
             box-sizing: border-box;
         }
 
-        /* Banner Section */
         .banner img {
             max-width: 100%;
             height: auto;
         }
 
-        /* Info Section */
         .info-section {
             display: flex;
             flex-direction: column;
@@ -87,14 +77,12 @@
             margin-bottom: 10px;
         }
 
-        /* Introductory Text */
         #intro {
             margin: 10px;
             max-width: 800px;
             text-align: left;
         }
-
-        /* Sports Info Grid */
+        /*flex-grid. had to trouble shoot using internet*/
         .sports-info-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -106,7 +94,6 @@
             box-sizing: border-box;
         }
 
-        /* Team Info Cards */
         .team-info {
             background-color: #E3D8B4;
             border-radius: 15px;
@@ -134,7 +121,6 @@
             text-align: left;
         }
 
-        /* Horizontal Rule */
         hr {
             border: 0;
             height: 3px;
@@ -142,12 +128,11 @@
             width: 100%;
             margin: 30px 0;
         }
-
-        /* Game Section */
+        /*got help from my friend for all of the javascript and css related to it (cs major at UW Madison)*/
         .game-section {
             margin: 40px 0;
             padding: 20px;
-            background-color: #FFF8DC; /* Example background color */
+            background-color: #FFF8DC; 
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 75%;
@@ -204,7 +189,6 @@
             color: #333;
         }
 
-        /* Responsive Design */
         @media (max-width: 600px) {
             main#content {
                 margin: 10px;
@@ -230,21 +214,14 @@
         }
     </style>
     <script>
-        // Game Functions
         let correctCheeseId;
 
         function startGame() {
-            // Shuffle the order of cheeses
             shuffleCheeses();
-
-            // Randomly assign one cheese as the winner
+            /*this randomly assign one cheese as the winner*/
             const cheeses = document.querySelectorAll('.game-container img');
             correctCheeseId = cheeses[Math.floor(Math.random() * cheeses.length)].id;
-
-            // Clear any previous messages
             document.getElementById("messages").innerHTML = '';
-
-            // Show the game container
             document.querySelector('.game-container').style.display = 'flex';
         }
 
@@ -257,11 +234,11 @@
 
         function handleCheeseClick(cheese) {
             if (cheese.id === correctCheeseId) {
-                cheese.src = '../images/trophy.png'; // Placeholder image for trophy
+                cheese.src = '../images/trophy.png'; 
                 document.getElementById("messages").innerHTML = 'You Won!';
                 disableCheeseClicks();
             } else {
-                cheese.src = '../images/mouse.png'; // Placeholder image for mouse
+                cheese.src = '../images/mouse.png'; 
                 document.getElementById("messages").innerHTML = 'Wrong Choice - Try Again';
             }
         }
@@ -274,31 +251,25 @@
             });
         }
 
-        // Initialize the game on window load
+        /* this loads the game as soon as the window loads but hides it off of the rip */
         window.onload = function () {
-            // Initially hide the game container
             document.querySelector('.game-container').style.display = 'none';
         };
     </script>
 </head>
 
 <body>
-    <!-- "Skip to content" link -->
     <a href="#content" class="skip-link">Skip to content</a>
 
-    <!-- Navigation Bar -->
     <nav id="navBar">
         <a href="projecthomepage.html" class="active">Home</a>&#124;<a href="packerspage.html">Green Bay Packers</a>&#124;<a href="buckspage.html">Milwaukee Bucks</a>
     </nav>
 
-    <!-- Main Content -->
     <main id="content">
-        <!-- Banner Section -->
         <section class="banner">
             <img src="../images/homePageBanner.png" alt="Milwaukee Skyline">
         </section>
 
-        <!-- Information Section -->
         <section class="info-section">
             <h1>Wisconsin Sports</h1>
             <div id="intro">
@@ -307,16 +278,13 @@
                 <p>Here, you will find information about these teams, their history, achievements, and impact on the community.</p>
             </div>
 
-            <!-- Sports Information Grid -->
             <div class="sports-info-grid">
-                <!-- Green Bay Packers Info -->
                 <article class="team-info">
                     <img src="../images/packersLogo.png" alt="Green Bay Packers Logo">
                     <h2>Green Bay Packers</h2>
                     <p>The Green Bay Packers, established in 1919, are one of the oldest and most successful teams in the NFL. Known for their passionate fan base and iconic Lambeau Field, the Packers have won numerous championships, including four Super Bowl titles.</p>
                 </article>
 
-                <!-- Milwaukee Bucks Info -->
                 <article class="team-info">
                     <img src="../images/bucksLogo.png" alt="Milwaukee Bucks Logo">
                     <h2>Milwaukee Bucks</h2>
@@ -327,11 +295,8 @@
                 <p>Scroll down for a fun game!</p>
             </div>
         </section>
-
-        <!-- Horizontal Rule -->
         <hr>
 
-        <!-- Game Section -->
         <section class="game-section">
             <h2>Choose a Cheese</h2>
             <p class="game-description">Click on a cheese to reveal what's underneath. Choose wisely!</p>
@@ -343,7 +308,10 @@
             </div>
             <div id="messages"></div>
         </section>
-    </main>ss
+        <footer>
+            <p>Evan Stachowiak © 2024</p>
+        </footer>
+    </main>
 </body>
 
 </html>
