@@ -24,13 +24,11 @@
         nav#navBar a {
             color: white;
             margin: 0 15px;
-            text-decoration: none;
         }
-
+        /* to display which tab it is currently on (used the internet for this) */
         nav#navBar a.active {
             font-weight: bold;
         }
-
         .skip-link {
             position: absolute;
             top: -40px;
@@ -54,10 +52,19 @@
             width: 100%;
             box-sizing: border-box;
         }
+        main#content {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100%;
+        }
 
         .banner img {
-            max-width: 100%;
+            width: 100%; /* makes the image take up the full viewport width */
             height: auto;
+            display: block;
         }
 
         .info-section {
@@ -126,12 +133,12 @@
             height: 3px;
             background-color: #333;
             width: 100%;
-            margin: 30px 0;
+            margin: 0;
         }
         footer {width: 100%;}
         .footerfloat1, .footerfloat2 {
             margin: 0;
-            padding: 0;
+            padding: 0 20px;
             font-size: 1em;
         }
 
@@ -282,7 +289,7 @@
 
     <main id="content">
         <section class="banner">
-            <img src="../images/homePageBanner.png" alt="Milwaukee Skyline">
+            <img src="../images/homeBanner1.jpg" alt="Milwaukee Skyline">
         </section>
 
         <section class="info-section">
