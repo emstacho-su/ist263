@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milwaukee Bucks Info</title>
+    <style>
+        /* Existing CSS */
+        body {
+            text-align: center;
+            margin: 0;
+            background-color: #00471B;
+        }
+
+        nav {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        main {
+            margin: 10px auto;
+            max-width: 1200px;
+            padding: 20px;
+            text-align: left;
+            background-color: #F1E6D8;
+            border-radius: 2em;
+            box-shadow: 0 0px 8px;
+        }
+
+        .players_flexbox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .players_flexbox div {
+            flex: 1;
+            min-width: 280px;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px;
+            background-color: white;
+        }
+
+        #starplayers_info {
+            margin: 0;
+            padding: 0;
+        }
+
+        #starplayers_info li {
+            margin: 5px;
+            list-style-type: none; 
+        }
+
+        @media (max-width: 768px) {
+            main {
+                margin: 5%;
+            }
+        }
+
+       
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background-color: #000;
+            color: #fff;
+            padding: 8px 16px;
+            transition: top 0.3s ease-in-out;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <a href="#content" class="skip-link">Skip to content</a>
+
+    <nav id="navBar">
+        <a href="projecthomepage.html">Home</a> | 
+        <a href="packerspage.html">Green Bay Packers</a> | 
+        <a href="buckspage.html">Milwaukee Bucks</a>
+    </nav>
+    
+    <div class="banner">
+        <img src="../images/bucks_banner.jpg" alt="Milwaukee Bucks Stadium">
+    </div>
+
+   
+    <main id="content">
+        <section id="history">
+            <h2>History of the Milwaukee Bucks</h2>
+            <p>Founded in 1968, the Milwaukee Bucks quickly made a name for themselves in the NBA. The team achieved immediate success, winning their first championship in 1971, led by the legendary Kareem Abdul-Jabbar and Oscar Robertson. The Bucks have a passionate following and have consistently been a competitive force in the league.</p>
+        </section>
+
+        <section id="achievements">
+            <h2>Notable Achievements</h2>
+            <p>The Bucks have won two NBA championships (1971 and 2021) and have made multiple playoff appearances throughout their history. Their recent triumph in 2021, led by superstar Giannis Antetokounmpo, reignited the excitement among fans and solidified their place in NBA history.</p>
+        </section>
+
+        <section class="players_flexbox">
+            <div id="players">
+                <h2>Star Players</h2>
+                <ul id="starplayers_info">
+                    <li><strong>Kareem Abdul-Jabbar</strong> - A dominant force in the league and one of the greatest players of all time.</li>
+                    <li><strong>Ray Allen</strong> - Known for his incredible shooting ability and clutch performances.</li>
+                    <li><strong>Giannis Antetokounmpo</strong> - The current face of the franchise and a two-time MVP.</li>
+                </ul>
+            </div>
+
+            <div id="finals_conference_wins">
+                <h2>Finals Champions</h2>
+                <ul>
+                    <li>1971 Finals Champions - vs. Baltimore Bullets</li>
+                    <li>2021 Finals Champions - vs. Phoenix Suns</li>
+                </ul>
+                <h2>Conference Champions</h2>
+                <ul>
+                    <li>1971 Western Conference Champions</li>
+                    <li>1974 Western Conference Champions</li>
+                    <li>2021 Eastern Conference Champions</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="fan-culture">
+            <h2>Fan Culture</h2>
+            <p>Bucks fans are known for their enthusiasm and dedication, creating an electric atmosphere at Fiserv Forum during games. The team’s recent success has brought even more excitement, with fan events and community engagement initiatives that strengthen the bond between the team and its supporters.</p>
+        </section>
+    </main>
+
+</body>
+</html>

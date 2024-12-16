@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Bay Packers Info</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            background-color: #203731;
+        }
+
+        nav {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        main {
+            margin: 10px auto;
+            max-width: 1200px;
+            padding: 20px;
+            text-align: left;
+            background-color: #FFB612;
+            border-radius: 2em;
+            box-shadow: 0 0px 8px;
+        }
+
+        .players_flexbox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .players_flexbox div {
+            flex: 1;
+            min-width: 280px;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px;
+            background-color: white;
+        }
+
+        #starplayers_info {
+            margin: 0;
+            padding: 0;
+        }
+
+        #starplayers_info li {
+            margin: 5px;
+            list-style-type: none;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background-color: #000;
+            color: #fff;
+            padding: 8px 16px;
+            transition: top 0.3s ease-in-out;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                margin: 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#content" class="skip-link">Skip to content</a>
+
+    <nav id="navBar">
+        <a href="projecthomepage.html">Home</a> | 
+        <a href="packerspage.html">Green Bay Packers</a> | 
+        <a href="buckspage.html">Milwaukee Bucks</a>
+    </nav>
+
+    <div class="banner">
+        <img src="../images/packers_banner.jpg" alt="Lambeau Field">
+    </div>
+
+    <main id="content">
+        <section id="history">
+            <h2>History of the Green Bay Packers</h2>
+            <p>Founded in 1919, the Green Bay Packers are the third-oldest franchise in the NFL. With a rich history of success, the team has won a total of 13 championships, the most in league history. Their iconic Lambeau Field is not only a home for the team but also a sacred place for fans who bleed green and gold.</p>
+        </section>
+
+        <section id="achievements">
+            <h2>Notable Achievements</h2>
+            <p>The Packers have a storied legacy, including four Super Bowl victories (I, II, XXXI, and XLV). The team is renowned for its historic rivalry with the Chicago Bears and its deep-rooted traditions, including the famous "Lambeau Leap."</p>
+        </section>
+
+        <section class="players_flexbox">
+            <div id="players">
+                <h2 id="players_title">Legendary Players</h2>
+                <ul>
+                    <li><strong>Bart Starr</strong> (1956-1971) - The quarterback who led the team to its first two Super Bowl victories.</li>
+                    <li><strong>Brett Favre</strong> (1992-2008) - A three-time MVP and one of the most beloved figures in NFL history.</li>
+                    <li><strong>Aaron Rodgers</strong> (2005-2023) - A four-time MVP known for his incredible passing talents.</li>
+                </ul>
+            </div>
+
+            <div id="superbowls">
+                <h2 id="superbowl_title">Super Bowl Wins</h2>
+                <p id="superbowls_text">The Packers have acquired 4 Lombardi trophies since the team's inception.</p>
+                <ul>
+                    <li>Super Bowl I (1967) - vs. Chiefs</li>
+                    <li>Super Bowl II (1968) - vs. Raiders</li>
+                    <li>Super Bowl XXXI (1997) - vs. Patriots</li>
+                    <li>Super Bowl XLV (2011) - vs. Steelers</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="fan-culture">
+            <h2>Fan Culture</h2>
+            <p>Packers fans, affectionately known as "Cheeseheads," are known for their unwavering loyalty and enthusiasm. The community surrounding the team is vibrant, with tailgating traditions and passionate game-day atmospheres that make attending a Packers game an unforgettable experience.</p>
+        </section>
+
+        <section id="lombardi_trophy">
+            <h2>The Lombardi Trophy</h2>
+            <p>The Lombardi Trophy was first introduced in 1967, as a trophy to be awarded to the Super Bowl champions. It is named in honor of Vince Lombardi, the legendary Green Bay Packers coach, who led his team to victory in the first annual Super Bowl. The trophy was designed by Tiffany & Co., is made of sterling silver, stands twenty-two inches tall, and weighs seven pounds.</p>
+        </section>
+    </main>
+</body>
+</html>
